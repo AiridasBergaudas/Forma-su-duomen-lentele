@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./zvaigzde.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>labas</h1>
+        <div class="cont_text">
+            <div class="text">
+                <h4>jūsų vardas</h4>
+                <input id="firstName" class="input" required size="70" placeholder="vardas" name="firstName" maxlength="50">
+                <span class="errorVardas"></span>
+            </div>
+            <div class="text">
+                <h4>jūsų pavardė</h4>
+                <input id="secondName" class="input" required size="50" placeholder="pavarde" name="secondName"maxlength="50">
+                <span class="errorPavarde"></span>
+            </div>
+            <div class="text">
+                <h4>gimimo data</h4>
+                <input id="birthday" class="input_data" required size="30" placeholder="YYYY.MM.DD" name="birthday"maxlength="20">
+                <span class="errorGimimoData"></span>
+            </div>         
+           <br>
+            <input class="button" type="submit" value="siųsti">
+        </div>
+    </div>  
+    <div class="cont my-5">
+        <table class="table hide">
+            <thead>
+                <tr>
+                    <th colspan="6">Pildytojų sąrašas</th>
+                </tr>
+                <tr>
+                    <th>Nr.</th>
+                    <th>Vardas</th>
+                    <th>Pavardė</th>
+                    <th scope="col">Amžius</th><!-- palikau scope, siaipsau -->
+                    <th>Veiksmas</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+    </div>
+    <script src="./js/forma_lentele.js"></script> 
+</body>
+</html>
